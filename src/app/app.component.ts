@@ -9,7 +9,7 @@ import { FormGroup, FormControl, AbstractControl } from '@angular/forms';
 export class AppComponent {
   isFormSubmit: boolean = false;
   validateForm = new FormGroup({
-    country: new FormControl('Select', this.DropdownSelectValidation("Afghanistan"))
+    country: new FormControl('Select', this.DropdownSelectValidation("Select"))
   })
   get country() { return this.validateForm.get('country'); }
   DropdownSelectValidation(validationValue: string) {
